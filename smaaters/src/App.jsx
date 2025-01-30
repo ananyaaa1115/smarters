@@ -4,7 +4,6 @@ import Banner from "./components/HeroSection";
 import { AppBar } from "@mui/material";
 import Categories from "./components/Categories";
 import HeroSection from "./components/HeroSection";
-import NewTrendingSection from "./components/NewTrendingSection";
 import Footer from "./components/Footer";
 import ProductCarousel from "./components/ProductCarousel";
 import CardData from "./components/CardData";
