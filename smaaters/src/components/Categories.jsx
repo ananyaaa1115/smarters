@@ -4,22 +4,22 @@ import {
   CardContent,
   CardMedia,
   Grid,
-  Typography,
+  Typography,a
 } from "@mui/material";
 import React from "react";
 
 const Categories = () => {
   const cards = [
     {
-      image: "Rectangle 186.png", // Replace with your image URL
+      image: "Rectangle 186.png",
       title: "Shop for kids (Him)",
     },
     {
-      image: "Rectangle 186 (1).png", // Replace with your image URL
+      image: "Rectangle 186 (1).png",
       title: "Shop for kids (Her)",
     },
     {
-      image: "Rectangle 186 (2).png", // Replace with your image URL
+      image: "Rectangle 186 (2).png",
       title: "Shop for New Born",
     },
   ];
@@ -28,22 +28,22 @@ const Categories = () => {
     <div>
       <Box
         sx={{
-          width: "1440px", // Fill width
-          height: "106px", // Fixed height
-          padding: "40px", // Padding on all sides
-          display: "flex", // Flexbox layout
-          justifyContent: "center", // Space between items
+          width: "1440px",
+          height: "106px",
+          padding: "40px",
+          display: "flex",
+          justifyContent: "center",
         }}
       >
         <Typography
           variant="h5"
           sx={{
-            fontFamily: "Satoshi", // Set the font family
+            fontFamily: "Satoshi",
             color: "#C4A180",
-            fontSize: "24px", // Set the font size
-            fontWeight: 700, // Set the font weight
-            lineHeight: "33.6px", // Set the line height
-            letterSpacing: "0.08em", // Set the letter spacing
+            fontSize: "24px",
+            fontWeight: 700,
+            lineHeight: "33.6px",
+            letterSpacing: "0.08em",
           }}
         >
           CATEGORIES
@@ -51,35 +51,30 @@ const Categories = () => {
       </Box>
       <Grid container spacing={2} sx={{ padding: "20px" }}>
         {cards.map((card, index) => (
-          <Grid
-            item
-            xs={12} // 1 card per row on mobile (12/12)
-            sm={4} // 3 cards per row on desktop (4/12)
-            key={index}
-          >
+          <Grid item xs={12} sm={4} key={index}>
             <Card
               sx={{
-                backgroundColor: "#978266", // Background color
-                borderRadius: "8px", // Optional: Add border radius
-                margin: "20px", // Optional: Margin around the card
+                backgroundColor: "#978266",
+                borderRadius: "8px",
+                margin: "20px",
               }}
             >
               <CardMedia
-                component="img" // Use 'img' for image
-                height="fit" // Set height of the image
-                image={card.image} // Use the respective image URL
-                alt={`Image for ${card.title}`} // Alt text for the image
+                component="img"
+                height="fit"
+                image={card.image}
+                alt={`Image for ${card.title}`}
                 sx={{
-                  objectFit: "cover", // Cover the entire area
-                  width: "100%", // Ensure full width
+                  objectFit: "cover",
+                  width: "100%",
                 }}
               />
               <CardContent>
                 <Typography
                   sx={{
-                    color: "white", // Text color
-                    fontSize: "18px", // Font size
-                    fontWeight: "bold", // Font weight
+                    color: "white",
+                    fontSize: "18px",
+                    fontWeight: "bold",
                   }}
                   gutterBottom
                 >
