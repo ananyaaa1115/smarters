@@ -65,6 +65,7 @@ const Footer = () => {
                     <Typography>Chat with Customer Service</Typography>
                     <Typography>Contact us</Typography>
                     <Typography>Send feedback</Typography>
+                    <Typography>Fashion</Typography>
                   </>
                 )}
               </Grid>
